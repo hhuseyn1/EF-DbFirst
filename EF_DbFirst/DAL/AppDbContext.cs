@@ -8,7 +8,7 @@ public class AppDbContext:DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("");
+        optionsBuilder.UseSqlServer("Data Source=DESKTOP-HUSEYN;Initial Catalog=Test;Integrated Security=True;");
     }
 
 }

@@ -1,10 +1,9 @@
-﻿namespace EF_DbFirst;
+﻿using EF_DbFirst.DAL;
 
-internal class Program
+using var context = new AppDbContext();
+
+foreach (var p in context.Products)
 {
-    public static void Main()
-    {
-
-    }
+    Console.WriteLine($"{p.Id} {p.Name} {p.UnitPrice} {p.Description}");
 
 }
